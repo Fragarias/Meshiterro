@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   # get 'homes/top'
   root to: "homes#top"
   get 'homes/about', as: 'about'
-  
-  
+
+
   # get 'post_images/new'
   # get 'post_images/index'
   # get 'post_images/show'
@@ -15,6 +15,6 @@ Rails.application.routes.draw do
 
   # get 'users/show'
   # get 'users/edit'
-  resources :users, only: [:show, :edit]
+  resources :users, only: [:show, :edit, :update]
 
 end
